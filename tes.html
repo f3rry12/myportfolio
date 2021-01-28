@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Rotation on sky-element</title>
+  <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+</head>
+<body onload="testJs();">
+  <a-scene >
+    <a-sky src="https://cdn.glitch.com/0f211e7c-212a-4d51-a2bd-e9caa1d12445%2Fubmd%201.jpg?v=1610937150234">
+      <a-animation attribute="rotation" fill="forwards" easing="linear" dur="18000" to="0 360 0" repeat="indefinite"></a-animation>
+	  <a-image src="https://cdn.glitch.com/0f211e7c-212a-4d51-a2bd-e9caa1d12445%2Fferry.png?v=1610937128624" height="4" width="4" rotation="0 0 0" position="1 0.75 -4"></a-image>
+    </a-sky>
+    <script>
+      var box = document.querySelector('a-scene');
+box.addEventListener('click', function () {
+  console.log("test");
+  document.querySelector('a-animation').stop();
+});
+      function is_touch_device() {
+ return (('ontouchstart' in window)
+      || (navigator.MaxTouchPoints > 0)
+      || (navigator.msMaxTouchPoints > 0));
+}
+      function testJs() {
+        
+        var gyroPresent = false;
+window.addEventListener("devicemotion", function(event){
+    if(event.rotationRate.alpha || event.rotationRate.beta || event.rotationRate.gamma)
+        
+    // Touch events are supported
+        document.querySelector('a-animation').stop();
+      
+});
+       
+      }
+    </script>
+</body>
+</html>
