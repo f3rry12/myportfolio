@@ -4,3 +4,59 @@
   
 
 }
+
+.skillDes{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: ;
+  font-size: 24px;
+  text-shadow: 1px 1px 3px white;
+}
+.skillIcon{
+  font-weight: bolder;
+}
+
+#backEndDes{
+  background-image: url(https://images.idgesg.net/images/article/2020/05/server_racks_close-up_perspective_shot_by_monsitj_gettyimages-918951042_cw_cio_2400x1600-100841601-large.jpg);
+  background-color: rgb(99, 97, 228);
+  background-blend-mode: screen;
+}
+#backEndIcon{
+  background-image: url(https://www.evernex.com/wp-content/uploads/2016/10/Untitled-1-1.jpg);
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: screen;
+}
+
+#frontEndDes{
+  background-image: url(https://cdn.searchenginejournal.com/wp-content/uploads/2019/12/5-ways-seo-web-design-go-together-5e2945dd5df37-760x400.png);
+  background-color: rgb(99, 97, 228);
+  background-blend-mode: screen;
+}
+#frontEndIcon{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD9BwaN-pzQEjc2e-AOPz0YUOssMierVD8IA&usqp=CAU);
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: screen;
+}
+
+#webVRDes{
+  background-image: url(https://c.files.bbci.co.uk/425F/production/_105619961_vrheadset.gif);
+  background-color: rgb(99, 97, 228);
+  background-blend-mode: screen;
+}
+
+#protoDes{
+  background-image: url(https://careerfoundry.com/en/blog/uploads/prototyping.png);
+  background-color: rgb(99, 97, 228);
+  background-blend-mode: screen;
+}
+
+#editDes{
+  background-image: url(https://static.bhphotovideo.com/explora/sites/default/files/styles/top_shot/public/topshot-5.jpg?itok=EghX9ST-);
+  background-color: rgb(99, 97, 228);
+  background-blend-mode: screen;
+}
+
+#androDes{
+  background-image: url(https://heightslibrary.org/wp-content/uploads/2020/06/Mobile-apps_Lead-960x480-1.jpg);
+  background-color: rgb(99, 97, 228);
+  background-blend-mode: screen;
+}

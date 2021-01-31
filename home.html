@@ -10,93 +10,322 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-    <!-- <link rel="stylesheet" href="css/home.css">
-    <script src="js/home.js"></script> -->
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/home.js"></script> 
 
     <style>
     a-scene {
-      height: 400px;
       width: auto;
+      height: calc(100vh - 188px) ;
     }
 </style>
   </head>
   <body>
 <!--  navbar  -->
     <nav id="navlogo" class="navbar navbar-expand-md navbar-dark bg-dark justify-content-center">
-    <a class="navbar-brand" href="#">  <img src="https://lh3.googleusercontent.com/QZZHErl58AWL6PFYoRKbz07SEZmN00HGgwetY4fTwpcPwd7730Uq-Ed9LUYoOAPAsJFrs6KFLyS-LQ83GmMdxka2me_CCVDzq9T6mKZ3EbVFsQMEqbTeY-CjIeFiWEnq3Cp-gVrN=w2400" width="30" height="30" class="d-inline-block align-top" alt=""></a>
+      <h2 class="text-light">This site currently still under development</h2>
+      <object type="image/svg+xml" data="sample.svg" height="60"></object>
+    <!-- <a class="navbar-brand" href="#">  <img src="SAMPLE.svg" width="30" height="30" class="d-inline-block align-top" alt=""></a> -->
   </nav>
 
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-center">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Who I Am</a>
+        <a class="nav-link" href="#whoiam">Who I Am</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">What I Can Do</a>
+        <a class="nav-link" href="#whaticando">What I Can Do</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">What I Made</a>
+        <a class="nav-link" href="#whatimade">What I Made</a>
       </li>
     </ul>
   </nav>
 
 <!-- {{-- 360infografi --}} -->
-    <!-- <div id="myEmbeddedScene">
+<div class="container-fluid bg-white">
+  <h1 id="whoiam" class="">Who I Am</h1>
+</div>
+    <div id="myEmbeddedScene">
     <a-scene embedded>
       <a-sky src="https://cdn.glitch.com/0f211e7c-212a-4d51-a2bd-e9caa1d12445%2Fubmd%201.jpg?v=1610937150234" >
-        <a-animation attribute="rotation" fill="forwards" easing="linear" dur="18000" to="0 360 0" repeat="indefinite"></a-animation>
-        <a-image src="https://cdn.glitch.com/0f211e7c-212a-4d51-a2bd-e9caa1d12445%2Fferry.png?v=1610937128624" height="4" width="4" rotation="0 0 0" position="1 0.75 -4"></a-image>
+        <a-image src="https://cdn.glitch.com/0f211e7c-212a-4d51-a2bd-e9caa1d12445%2Fferry.png?v=1610937128624" height="5" width="4" rotation="0 0 0" position="4 0.75 -6"></a-image>
+
+        <a-entity text=" width: 15; color: black; value: Ferry Abu Darrin Al Ghifari;" rotation="0 0 0" position="-6 1.75 -5" scale="-1 1 0"></a-entity>
+        <a-entity geometry="primitive: plane; height: 1.5; width: 8" material="color: white" rotation="0 0 0" position="-2.5 1.75 -5.1" scale="-1 1 0"></a-entity>
+
+        <a-entity text=" width: 15; color: black; value: still under development;" rotation="0 0 0" position="-6 -1 -5" scale="-1 1 0"></a-entity>
+        <a-entity geometry="primitive: plane; height: 1.5; width: 20" material="color: white" rotation="0 0 0" position="-8.5 -1 -5.1" scale="-1 1 0"></a-entity>
+        <a-entity text=" width: 9; color: black; value: waduh kepanjangan;" rotation="0 0 0" position="-17 -1 -5" scale="-1 1 0"></a-entity>
+        <!-- <a-entity
+        position=rotation="0 0 0" position="1 0.75 -6"
+        geometry="primitive: plane; height: auto; width: auto"
+        material="color: white; transparent: true; opacity: 0.3"
+        text="width: 5; color: black; font: kelsonsans; align: center; value: Ferry Abu Darrin Al Ghifari">
+      </a-entity> -->
     </a-sky>
     </a-scene>
-    </div> -->
+    </div>
 
-    <!-- what can i do -->
+    <!-- what i can do -->
     <div class="container-fluid">
       <div class="row justify-content-center bg-dark">
-        <h1>What Can I Do</h1>
+        <h1 id="whaticando">What I Can Do</h1>
       </div>
 
-      <div class="row " style="height: 312px;">
-        <div class="col-sm-6 col-md-4 bg-primary p-4">
-          <h2 class="text-center">Back End</h2>
-          <div class="d-flex justify-content-center">
-            <img class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" alt="laravel" width="160" height="160">
-            <img class="" src="https://www.php.net/images/logos/new-php-logo.svg" alt="laravel" width="160" height="160">
+      <div class="row ">
+        <div id="backEndIcon" class="col-sm-6 col-md-4 p-4 bg-light" style="min-height: 336px;">
+          <h2 class="text-center skillIcon">Back End</h2>
+          <div class="d-flex justify-content-center p-2">
+            <img class="m-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" alt="laravel" width="160" height="160">
+            <img class="m-2" src="https://www.php.net/images/logos/new-php-logo.svg" alt="PHP" width="160" height="160">
           </div>
         </div>
-        <div class="col-sm-6 col-md-8 bg-secondary">
-          <p class="m-5">Familiar with Web Development using HTML dan PHP. And familiar using framework Bootstrap for frontend and Laravel for backend</p>
+        <div id="backEndDes" class="col-sm-6 col-md-8 skillDes">
+          <p class="m-5 ">Familiar with Web Development using HTML dan PHP. And familiar using framework Bootstrap for frontend and Laravel for backend</p>
         </div>
       </div>
 
-      <div class="row " style="height: 312px;">
-        <div class="col-sm-6 col-md-8 bg-secondary">
-          <p class="m-5">Familiar with Web Development using HTML dan PHP. And familiar using framework Bootstrap for frontend and Laravel for backend</p>
-        </div>
-        <div class="col-sm-6 col-md-4 bg-primary p-4">
-          <h2 class="text-center">Front End</h2>
-          <div class="d-flex justify-content-center">
-            <img class="rounded" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-social-logo.png" alt="laravel" width="160" height="160">
-            <img class="rounded" src="https://cdn.worldvectorlogo.com/logos/javascript.svg" alt="laravel" width="160" height="160">
+      <div class="row " >
+        <div id="frontEndIcon"  class="col-sm-6 col-md-4 p-4 order-first order-sm-last bg-light" style="min-height: 336px;">
+          <h2 class="text-center skillIcon">Front End</h2>
+          <div class="d-flex justify-content-center p-2">
+            <img class="rounded m-2" src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-social-logo.png" alt="Bootstrap" width="160" height="160">
+            <img class="rounded m-2" src="https://cdn.worldvectorlogo.com/logos/javascript.svg" alt="Javascript" width="160" height="160">
           </div>
+        </div>
+        <div id="frontEndDes" class="col-sm-6 col-md-8  skillDes">
+          <p class="m-5">Familiar with Web Development using HTML dan PHP. And familiar using framework Bootstrap for frontend and Laravel for backend</p>
         </div>
       </div>
 
       <div class="row ">
-        <div class="col-sm-6 col-md-4 bg-primary p-4">
-          <h2 class="text-center">Web VR</h2>
-          <img class="mx-auto d-block" src="https://lh3.googleusercontent.com/proxy/uiOG_27HJ5L1DN7r42vmPZH-mfI7IyufIbAelyWigxH6SdspX1j63yfnFlV2DxIz2FlxEVnTO4MkokE-1jE9h1dkSdhdLBpCSoWm9pToBiKjmQgqFiFQMufXnGHkghI" class="rounded" alt="laravel" width="240" height="240">
+        <div class="col-sm-6 col-md-4 p-4 bg-light" style="min-height: 336px;">
+          <h2 class="text-center skillIcon">Web VR</h2>
+          <img class="mx-auto d-block" src="https://cdn.glitch.com/0f211e7c-212a-4d51-a2bd-e9caa1d12445%2Ficonaframe.png?v=1611986158198" class="rounded" alt="Aframe" width="240" height="240">
         </div>
-        <div class="col-sm-6 col-md-8 bg-secondary">
+        <div id="webVRDes" class="col-sm-6 col-md-8 skillDes">
+          <p class="m-5">Familiar with Web Development using HTML dan PHP. And familiar using framework Bootstrap for frontend and Laravel for backend</p>
+        </div>
+      </div>
+
+      <div class="row ">
+        <div class="col-sm-6 col-md-4 p-4 order-first order-sm-last bg-light" style="min-height: 336px;">
+          <h2 class="text-center skillIcon">Prototyping</h2>
+          <img class="mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png" class="rounded" alt="Adobe XD" width="240" height="240">
+        </div>
+        <div id="protoDes" class="col-sm-6 col-md-8 skillDes">
+          <p class="m-5">Familiar with Web Development using HTML dan PHP. And familiar using framework Bootstrap for frontend and Laravel for backend</p>
+        </div>
+      </div>
+
+      <div class="row ">
+        <div class="col-sm-6 col-md-4 p-4 bg-light" style="min-height: 336px;">
+          <h2 class="text-center skillIcon">Editting</h2>
+          <img class="mx-auto d-block" src="https://seeklogo.com/images/A/adobe-photoshop-logo-7B88D7B5AA-seeklogo.com.png" class="rounded" alt="Photoshop" width="240" height="240">
+        </div>
+        <div id="editDes"  class="col-sm-6 col-md-8 skillDes">
+          <p class="m-5">Familiar with Web Development using HTML dan PHP. And familiar using framework Bootstrap for frontend and Laravel for backend</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-4 p-4 order-first order-sm-last bg-light" style="min-height: 336px;">
+          <h2 class="text-center skillIcon">Android</h2>
+          <img class="mx-auto d-block" src="https://www.pngitem.com/pimgs/m/1-13806_android-studio-icon-png-transparent-png.png" class="rounded" alt="Android Studio" width="240" height="240">
+        </div>
+        <div id="androDes" class="col-sm-6 col-md-8 skillDes">
           <p class="m-5">Familiar with Web Development using HTML dan PHP. And familiar using framework Bootstrap for frontend and Laravel for backend</p>
         </div>
       </div>
 
     </div> 
 
+    <!-- Skill Summary -->
+    <div class="container-fluid bg-white p-lg-5">
+      <br>
+      <h1 class="text-center">Skill Summary</h1>
 
-    tes
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    tes
+      <div class="row d-flex text-center justify-content-center">
+        <div class="col-sm my-4">
+         <h4>Web Development</h5> 
+         <img class="rounded m-2" src="https://cdn.icon-icons.com/icons2/1875/PNG/512/web_120072.png" alt="Web" width="60" height="60"> <br>
+         <svg height="20" width="84">
+          <circle cx="12" cy="10" r="8" fill="black" />
+          <circle cx="32" cy="10" r="8" fill="black" />
+          <circle cx="52" cy="10" r="8" stroke="black" stroke-width="1" fill="white"/>
+          <circle cx="72" cy="10" r="8" stroke="black" stroke-width="1" fill="white"/>
+        </svg> <br>
+        <h5>Intermediate</h5>
+        </div>
+        <div class="col-sm my-4">
+          <h4>System Design</h5> 
+            <img class="rounded m-2" src="https://static.thenounproject.com/png/1765030-200.png" alt="system design" width="60" height="60"> <br>
+            <svg height="20" width="84">
+             <circle cx="12" cy="10" r="8" fill="black" />
+             <circle cx="32" cy="10" r="8" fill="black" />
+             <circle cx="52" cy="10" r="8" stroke="black" stroke-width="1" fill="white"/>
+             <circle cx="72" cy="10" r="8" stroke="black" stroke-width="1" fill="white"/>
+           </svg> <br>
+           <h5>Intermediate</h5>
+        </div>
+        <div class="col-sm my-4">
+          <h4>UX/UI Design</h5> 
+            <img class="rounded m-2" src="https://static.thenounproject.com/png/2070195-200.png" alt="UX/UI" width="60" height="60"> <br>
+            <svg height="20" width="84">
+             <circle cx="12" cy="10" r="8" fill="black" />
+             <circle cx="32" cy="10" r="8" fill="black" />
+             <circle cx="52" cy="10" r="8" stroke="black" stroke-width="1" fill="white"/>
+             <circle cx="72" cy="10" r="8" stroke="black" stroke-width="1" fill="white"/>
+           </svg> <br>
+           <h5>Intermediate</h5>
+        </div>  
+      </div>
+
+      <div class="row d-flex text-center justify-content-center my-4">
+      <div class="col-sm my-4">
+         <h4>Multimedia Editting</h5> 
+         <img class="rounded m-2" src="https://static.thenounproject.com/png/1617438-200.png" alt="Web" width="60" height="60"> <br>
+         <svg height="20" width="84">
+          <circle cx="12" cy="10" r="8" fill="black" />
+          <circle cx="32" cy="10" r="8" fill="black" />
+          <circle cx="52" cy="10" r="8" stroke="black" stroke-width="1" fill="white"/>
+          <circle cx="72" cy="10" r="8" stroke="black" stroke-width="1" fill="white"/>
+        </svg> <br>
+        <h5>Intermediate</h5>
+        </div>
+        <div class="col-sm my-4">
+          <h4>Android Application Development</h5> 
+            <img class="rounded m-2" src="https://image.flaticon.com/icons/png/512/65/65680.png" alt="edit" width="60" height="60"> <br>
+            <svg height="20" width="84">
+             <circle cx="12" cy="10" r="8" fill="black" />
+             <circle cx="32" cy="10" r="8" stroke="black" stroke-width="1" fill="white"/>
+             <circle cx="52" cy="10" r="8" stroke="black" stroke-width="1" fill="white"/>
+             <circle cx="72" cy="10" r="8" stroke="black" stroke-width="1" fill="white"/>
+           </svg> <br>
+           <h5>Novice</h5>
+        </div>
+        <div class="col-sm my-4">
+          <h4>Data Mining</h5> 
+            <img class="rounded m-2" src="https://static.thenounproject.com/png/1119957-200.png" alt="Web" width="60" height="60"> <br>
+            <svg height="20" width="84">
+             <circle cx="12" cy="10" r="8" fill="black" />
+             <circle cx="32" cy="10" r="8" stroke="black" stroke-width="1" fill="white"/>
+             <circle cx="52" cy="10" r="8" stroke="black" stroke-width="1" fill="white"/>
+             <circle cx="72" cy="10" r="8" stroke="black" stroke-width="1" fill="white"/>
+           </svg> <br>
+           <h5>Novice</h5>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- What I Made -->
+    <div class="container-fluid bg-light p-5">
+      <div class="row">
+          <div class="col-6">
+              <h3 id="whatimade" class="mb-3">What I Made </h3>
+          </div>
+          <div class="col-6 text-right">
+              <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                  <i class="carousel-control-prev-icon"></i>
+              </a>
+              <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                  <i class="carousel-control-next-icon"></i>
+              </a>
+          </div>
+          <div class="col-12">
+              <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+  
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="row">
+  
+                              <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                    <a href="http://borobudur.realitas.id/" target="_blank">
+                                      <img class="img-fluid" alt="WebVR" src="https://cdn.glitch.com/0f211e7c-212a-4d51-a2bd-e9caa1d12445%2Fvrcagarbudaya.jpg?v=1611929201377">
+                                    </a>
+                                      
+                                      <div class="card-body">
+                                          <h4 class="card-title">Borobudur Web VR Tour</h4>
+                                          <p class="card-text">This website allow people to a tour in Borobudur virtually with panorama VR.</p>
+  
+                                      </div>
+  
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
+                                      <div class="card-body">
+                                          <h4 class="card-title">Special title treatment</h4>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
+                                      <div class="card-body">
+                                          <h4 class="card-title">Special title treatment</h4>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  
+                                      </div>
+                                  </div>
+                              </div>
+  
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="row">
+  
+                              <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
+                                      <div class="card-body">
+                                          <h4 class="card-title">Special title treatment</h4>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  
+                                      </div>
+  
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
+                                      <div class="card-body">
+                                          <h4 class="card-title">Special title treatment</h4>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 mb-3">
+                                  <div class="card">
+                                      <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
+                                      <div class="card-body">
+                                          <h4 class="card-title">Special title treatment</h4>
+                                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+  
+                                      </div>
+                                  </div>
+                              </div>
+  
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div>
+    footer
+    my name
+    how to contact and my socmed in icon
+  </div>
+    
   </body>
 </html>
