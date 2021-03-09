@@ -3,6 +3,24 @@
   clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);clip-path: ellipse(25% 100% at 49% 0%);
 }
 
+#whaticando{
+  background-image: url(https://cdn.glitch.com/0f211e7c-212a-4d51-a2bd-e9caa1d12445%2Fbgskilltext.png?v=1615247580015);
+  
+}
+
+#textwhaticando{
+  border-radius: 25px ;
+  border: 8px solid #000000ce ;
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0px;
+  transition: opacity 1s ease-in-out;
+}
+
+#textwhaticando:hover{
+opacity: 0.3;
+}
+
 .skillDes{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
