@@ -5,20 +5,25 @@
 
 #whaticando{
   background-image: url(https://cdn.glitch.com/0f211e7c-212a-4d51-a2bd-e9caa1d12445%2Fbgskilltext.png?v=1615247580015);
-  
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: screen;
+  transition: 1s;
 }
-
+#whaticando:hover{
+  background-color: rgba(255, 255, 255, 0);
+  background-blend-mode: screen;
+}
 #textwhaticando{
   border-radius: 25px ;
   border: 8px solid #000000ce ;
   background-color: white;
   padding: 20px;
   margin: 20px 0px;
-  transition: opacity 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 #textwhaticando:hover{
-opacity: 0.3;
+  transform: scale(1.1);
 }
 
 .skillDes{
@@ -28,6 +33,12 @@ opacity: 0.3;
 }
 .skillIcon{
   font-weight: bolder;
+}
+.skillIconImg{
+  transition: 0.5s ease-in-out;
+}
+.skillIconImg:hover{
+  transform: scale(1.1);
 }
 
 #backEndDes{
