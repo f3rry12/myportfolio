@@ -107,19 +107,55 @@
   background-blend-mode: screen;
 }
 
-.parallax {
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.grid-art{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 40px;
+  grid-auto-flow: dense;
+  grid-gap: 10px;
 }
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
+.art-box{
+  border-style: solid;
+  border-width: medium;
+  padding: 20px;
+  display: grid;
+  font-size: 20px;
+  place-items: center;
+  text-align: center;
+  transition: 0.5s;
+}
+.art-box:hover{
+  background: #ffffffd2;
+}
+
+.art-1{
+  grid-area:2/2/3/3;
+  
+}
+.art-2{
+  grid-area:1/1/2/3;
+  
+}
+.art-3{
+  grid-area:1/3/3/4;
+  
+}
+.art-4{
+  grid-area:2/1/4/2;
+  
+}
+.art-5{
+  grid-area:3/2/4/4;
+  
+}
+
+@media (max-width: 991px) {
+  .grid-art {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: minmax(auto, auto);
+  }
+  .art-box {
+    grid-column: unset !important;
+    grid-row: unset !important;
   }
 }
