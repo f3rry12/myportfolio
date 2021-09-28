@@ -58,7 +58,7 @@
 }
 
 #backEndDes{
-  background-image: url(https://images.idgesg.net/images/article/2020/05/server_racks_close-up_perspective_shot_by_monsitj_gettyimages-918951042_cw_cio_2400x1600-100841601-large.jpg);
+  background-image: url(https://www.racksolutions.com/news//app/uploads/AdobeStock_90603827-1024x576.jpeg);
   background-color: rgb(99, 97, 228);
   background-blend-mode: screen;
 }
@@ -88,7 +88,7 @@
 }
 
 #protoDes{
-  background-image: url(https://careerfoundry.com/en/blog/uploads/prototyping.png);
+  background-image: url(https://dpbnri2zg3lc2.cloudfront.net/en/wp-content/uploads/2021/09/Free_UX_courses_tech_you_the_importance_of_doing_UX_work_off-screen.jpg);
   background-color: rgb(99, 97, 228);
   background-blend-mode: screen;
   background-repeat: no-repeat;
@@ -158,4 +158,29 @@
     grid-column: unset !important;
     grid-row: unset !important;
   }
+}
+
+/* delete later */
+#portodata{
+  background-image: url(https://www.efficy.com/wp-content/uploads/2019/06/data-mining-900x412.jpg);
+  background-color: rgb(99, 97, 228);
+  background-blend-mode: screen;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+#portodll{
+  background-image: url(https://cdn.glitch.com/0f211e7c-212a-4d51-a2bd-e9caa1d12445%2Fbg_sekolah.png?v=1625267240040);
+  background-color: rgba(0, 191, 255) !important;
+  background-blend-mode: screen;
+  background-position: left bottom; 
+  background-repeat: no-repeat;
+  background-size: auto 120px;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+#portosipp{
+  background-image: url(https://image.freepik.com/free-photo/portrait-smiling-handsome-male-doctor-man_171337-5055.jpg);
+  background-color: rgba(255, 255, 255, 0.616);
+  background-blend-mode: lighten;
+  background-position: center; 
 }
